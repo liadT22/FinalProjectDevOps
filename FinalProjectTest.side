@@ -1,0 +1,185 @@
+{
+  "id": "48e0ee04-8e8e-43df-9a4d-8b97b0c272c5",
+  "version": "2.0",
+  "name": "FinalProjectTest",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "e2f39f15-b843-476e-8b27-5f82b20ee0b4",
+    "name": "FinalProjectSe",
+    "commands": [{
+      "id": "b7b5ea39-f552-473e-864d-d9040ecd8001",
+      "comment": "",
+      "command": "open",
+      "target": "/LiadAyalDanielShimon/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52299040-f547-4385-94d8-f74cdee12c33",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "728x912",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40e961e6-fbb3-430d-b669-467a8580e910",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(3)",
+      "targets": [
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=(//input[@name='author'])[3]", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ede58702-4483-47f2-9be3-2a90db55de94",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(4)",
+      "targets": [
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@value='Query']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "514f7c25-18d3-4378-9a20-4cddf6dde549",
+      "comment": "",
+      "command": "click",
+      "target": "css=li",
+      "targets": [
+        ["css=li", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'LiadT3')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "efad9915-80df-4754-9f77-128685612e4a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li",
+      "targets": [
+        ["css=li", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'LiadT3')]", "xpath:innerText"]
+      ],
+      "value": "LiadT3"
+    }, {
+      "id": "9474e748-14ef-4638-a2ec-8d8c5cf438e5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=BACK",
+      "targets": [
+        ["linkText=BACK", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'BACK')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/LiadAyalDanielShimon/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'BACK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "36418230-1a40-480a-8367-9f0911d558bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@name='author'])[2]", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09ae5fbc-723d-40ce-b993-caf3e13132c9",
+      "comment": "",
+      "command": "click",
+      "target": "name=author",
+      "targets": [
+        ["name=author", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='author']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e55a49e4-539b-4acd-9ea6-c9af9560a6cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(4)",
+      "targets": [
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@value='Query']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88bf9742-c486-4c8c-80cd-11da021996ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Tan Ah Teck')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cea01b87-6f0a-4a0c-9528-d720ef8df29c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Tan Ah Teck')]", "xpath:innerText"]
+      ],
+      "value": "Tan Ah Teck"
+    }, {
+      "id": "51c242f1-ae08-433f-8905-f8b497b11eea",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(2)", "css:finder"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Mohd Ali')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4190ee3f-0fa3-4640-9b16-8bd163bb4bc1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(2)", "css:finder"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Mohd Ali')]", "xpath:innerText"]
+      ],
+      "value": "Mohd Ali"
+    }, {
+      "id": "d958625e-6f59-4352-b32b-9821b3daf669",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=BACK",
+      "targets": [
+        ["linkText=BACK", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'BACK')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/LiadAyalDanielShimon/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'BACK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "64194ab8-c73a-419a-af23-82b71a1cacd2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e2f39f15-b843-476e-8b27-5f82b20ee0b4"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}
