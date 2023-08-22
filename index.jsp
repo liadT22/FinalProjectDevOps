@@ -7,7 +7,7 @@
     <form method="get">
       <input type="checkbox" name="author" value="Tan Ah Teck" />Tan
       <input type="checkbox" name="author" value="Mohd Ali" />Ali
-      <input type="checkbox" name="author" value="LiadT4" />LiadT4
+      <input type="checkbox" name="author" value="LiadT3" />LiadT3
       <input type="submit" value="Query" />
     </form>
 
