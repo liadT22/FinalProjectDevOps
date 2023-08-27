@@ -14,9 +14,9 @@
             xhr.send();
         }
 
-        function loadImage() {
+        function loadImage(imagePath) {
             var img = document.createElement('img');
-            img.src = 'path_to_image.jpg'; // Replace with your image path
+            img.src = imagePath;
             document.getElementById('imageContainer').appendChild(img);
         }
     </script>
@@ -47,7 +47,10 @@
     </form>
 
     <!-- Dynamic Content Loading -->
-    <button onclick="loadImage()">Load Image</button>
+    <button onclick="loadImage('pikachu.jpg')">Load Image 1</button>
+    <button onclick="loadImage('charmander.jpg')">Load Image 2</button>
+    <button onclick="loadImage('squirtle.jpg')">Load Image 3</button>
+    <button onclick="loadImage('ballbasaur.jpg')">Load Image 4</button>
     <div id="imageContainer"></div>
 
     <% 
