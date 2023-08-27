@@ -1,14 +1,33 @@
 <html>
   <head>
     <title>Echoing HTML Request Parameters</title>
+    <script>
+        function loadAuthorData(authorName) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'authorData.jsp?name=' + authorName, true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    // Handle response if needed
+                    console.log(xhr.responseText);
+                }
+            };
+            xhr.send();
+        }
+
+        function loadImage() {
+            var img = document.createElement('img');
+            img.src = 'path_to_image.jpg'; // Replace with your image path
+            document.getElementById('imageContainer').appendChild(img);
+        }
+    </script>
   </head>
   <body>
     <h3>Choose an author:</h3>
     <form method="get">
-      <!-- Checkboxes for Authors -->
-      <input type="checkbox" name="author" value="Tan Ah Teck" />Tan
-      <input type="checkbox" name="author" value="Mohd Ali" />Ali
-      <input type="checkbox" name="author" value="LiadT3" />LiadT3
+      <!-- Checkboxes for Authors with AJAX calls -->
+      <input type="checkbox" name="author" value="Tan Ah Teck" onclick="loadAuthorData('Tan Ah Teck')" />Tan
+      <input type="checkbox" name="author" value="Mohd Ali" onclick="loadAuthorData('Mohd Ali')" />Ali
+      <input type="checkbox" name="author" value="LiadT3" onclick="loadAuthorData('LiadT3')" />LiadT3
 
       <!-- Textboxes -->
       <h3>Enter Book Title and Year:</h3>
@@ -26,6 +45,10 @@
 
       <input type="submit" value="Query" />
     </form>
+
+    <!-- Dynamic Content Loading -->
+    <button onclick="loadImage()">Load Image</button>
+    <div id="imageContainer"></div>
 
     <% 
     String[] authors = request.getParameterValues("author"); 
