@@ -50,7 +50,7 @@
     <button onclick="loadImage('pikachu.png')">Load Image 1</button>
     <button onclick="loadImage('charmander.jpg')">Load Image 2</button>
     <button onclick="loadImage('squirtle.png')">Load Image 3</button>
-    <button onclick="loadImage('ballbasaur.png')">Load Image 4</button>
+    <button onclick="loadImage('bulbasaur.png')">Load Image 4</button>
     <div id="imageContainer"></div>
 
     <% 
