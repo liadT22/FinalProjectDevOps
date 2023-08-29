@@ -2,6 +2,8 @@
   <head>
     <title>Echoing HTML Request Parameters</title>
     <script>
+        var imageCounter = 0; // Counter to keep track of the current image
+
         function loadAuthorData(authorName) {
             var xhr = new XMLHttpRequest();
             xhr.open('GET', 'authorData.jsp?name=' + authorName, true);
@@ -18,6 +20,12 @@
             var img = document.createElement('img');
             img.src = imagePath;
             document.getElementById('imageContainer').appendChild(img);
+        }
+
+        function loadNextImage() {
+            var nextImage = 'pokemon/' + imageCounter + '.png';
+            loadImage(nextImage);
+            imageCounter = (imageCounter + 1) % 200; // Loop back to 0 after reaching 199
         }
     </script>
   </head>
@@ -47,10 +55,7 @@
     </form>
 
     <!-- Dynamic Content Loading -->
-    <button onclick="loadImage('pikachu.png')">Load Image 1</button>
-    <button onclick="loadImage('charmander.jpg')">Load Image 2</button>
-    <button onclick="loadImage('squirtle.png')">Load Image 3</button>
-    <button onclick="loadImage('bulbasaur.png')">Load Image 4</button>
+    <button onclick="loadNextImage()">Load Next Image</button>
     <div id="imageContainer"></div>
 
     <% 
