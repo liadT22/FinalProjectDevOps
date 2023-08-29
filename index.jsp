@@ -35,7 +35,7 @@
       <!-- Checkboxes for Authors with AJAX calls -->
       <input type="checkbox" name="author" value="Tan Ah Teck" onclick="loadAuthorData('Tan Ah Teck')" />Tan
       <input type="checkbox" name="author" value="Mohd Ali" onclick="loadAuthorData('Mohd Ali')" />Ali
-      <input type="checkbox" name="author" value="LiadT3" onclick="loadAuthorData('LiadT3')" />LiadT3
+      <input type="checkbox" name="author" value="LiadT2" onclick="loadAuthorData('LiadT2')" />LiadT3
 
       <!-- Textboxes -->
       <h3>Enter Book Title and Year:</h3>
